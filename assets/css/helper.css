@@ -1,15 +1,3 @@
-/* ---------------------------------------------------------------------------------------
-* Template Helper CSS
-* 
-* Template:		Nui - Creative Portfolio Showcase HTML Website Template
-* Author:		Themetorium
-* URL:			https://themetorium.net/
-*
-* Secondary Font: 'Syne', sans-serif;
-* Main color:  #b12c0d;
-*
-* You are free to use these extra prepared helper classes to customize your web site.
---------------------------------------------------------------------------------------- */
 
 
 /* Table of Content
@@ -115,7 +103,7 @@ ul.tt-list > li {
  * Note: parent element must contain "position: relative;" or "position: absolute;"
 /* ----------------------------------------------------------------------------------- */
 
-/* Cover 
+/* Cover
 ========= */
 .tt-cover:before {
 	position: absolute;
@@ -239,7 +227,7 @@ body:not(.is-mobile) .hide-to-mobile { display: none !important; }
 /* ------------------------------------------------------------- */
 
 /* font alter */
-.font-alter { 
+.font-alter {
 	font-family: 'Syne', sans-serif !important;
 }
 
@@ -312,8 +300,8 @@ p.text-xxxlg {
 .letter-spacing-15 { letter-spacing: 15px !important; }
 
 /* text normal */
-.text-normal { 
-	text-transform: none !important; 
+.text-normal {
+	text-transform: none !important;
 	letter-spacing: 0 !important;
 }
 
@@ -396,7 +384,7 @@ p.text-xxxlg {
 /* ------------------------------------------------------------- */
 
 /* hover opacity */
-.hover-opacity { 
+.hover-opacity {
 	transition: all .2s ease-in-out !important;
 }
 .hover-opacity:hover {
@@ -404,7 +392,7 @@ p.text-xxxlg {
 }
 
 /* hover zoom */
-.hover-zoom { 
+.hover-zoom {
 	transition: all .3s ease-in-out !important;
 }
 .hover-zoom:hover {
@@ -412,7 +400,7 @@ p.text-xxxlg {
 }
 
 /* hover hop */
-.hover-hop { 
+.hover-hop {
 	transition: all .3s ease-in-out !important;
 }
 .hover-hop:hover {
@@ -420,7 +408,7 @@ p.text-xxxlg {
 }
 
 /* hover shadow */
-.hover-shadow { 
+.hover-shadow {
 	transition: all .3s ease-in-out !important;
 }
 .hover-shadow:hover {
@@ -547,7 +535,7 @@ p.text-xxxlg {
 
 /* full height (vh) on desktop only */
 @media (min-width: 1025px) {
-	.full-height-vh { 
+	.full-height-vh {
 		height: 100vh;
 		min-height: 100vh;
 	}
@@ -559,11 +547,11 @@ p.text-xxxlg {
 
 /* full height (vh) on small screens only */
 @media (max-width: 1024px) {
-	.full-height-vh-m { 
+	.full-height-vh-m {
 		height: calc(100vh - 64px); /* minus same as mobile header height */
 		min-height: calc(100vh - 64px); /* minus same as mobile header height */
 	}
-	body.header-show-hide-on-scroll-on.page-header-on .full-height-vh-m { 
+	body.header-show-hide-on-scroll-on.page-header-on .full-height-vh-m {
 		height: 100vh;
 		min-height: 100vh;
 	}
@@ -718,13 +706,13 @@ p.text-xxxlg {
  * Text color classes
 /* ------------------------------------------------------------- */
 
-.text-main, 
-.text-primary { 
+.text-main,
+.text-primary {
 	color: var(--tt-main-color) !important;  /* Template main color */
 }
-a.text-primary:focus, 
-a.text-primary:hover { 
-	color: var(--tt-main-color)!important; opacity: .8 !important; 
+a.text-primary:focus,
+a.text-primary:hover {
+	color: var(--tt-main-color)!important; opacity: .8 !important;
 }
 
 .text-secondary { color: #6c757d !important; }
@@ -768,13 +756,13 @@ a.tt-link:focus {
 }
 
 /* Link style 2 */
-a.tt-link-2 { 
+a.tt-link-2 {
 	color: currentColor;
 	opacity: 1;
 	border-bottom: 1px solid;
 }
 a.tt-link-2:hover,
-a.tt-link-2:focus { 
+a.tt-link-2:focus {
 	color: currentColor;
 	opacity: .6;
 }
@@ -814,8 +802,8 @@ a.link-yellow:hover,
 a.link-red:hover,
 a.link-brown:hover,
 a.link-purple:hover,
-a.link-pink:hover { 
-	opacity: .8 !important; 
+a.link-pink:hover {
+	opacity: .8 !important;
 }
 
 
@@ -1320,7 +1308,7 @@ a.link-pink:hover {
 .padding-right-200 { padding-right: 200px !important; }
 
 
-/* Padding (percent) 
+/* Padding (percent)
 ===================== */
 .padding-1-p { padding: 1% !important; }
 .padding-2-p { padding: 2% !important; }
@@ -1439,7 +1427,7 @@ a.link-pink:hover {
 .no-padding-right { padding-right: 0 !important; }
 
 
-/* Breakpoints 
+/* Breakpoints
 =============== */
 @media (min-width: 576px) {
 	.padding-sm-5 { padding: 5px !important; }
@@ -1642,7 +1630,7 @@ a.link-pink:hover {
 	.padding-right-sm-200 { padding-right: 200px !important; }
 
 
-	/* Padding (percent) 
+	/* Padding (percent)
 	===================== */
 	.padding-sm-1-p { padding: 1% !important; }
 	.padding-sm-2-p { padding: 2% !important; }
@@ -1961,7 +1949,7 @@ a.link-pink:hover {
 	.padding-right-md-200 { padding-right: 200px !important; }
 
 
-	/* Padding (percent) 
+	/* Padding (percent)
 	===================== */
 	.padding-md-1-p { padding: 1% !important; }
 	.padding-md-2-p { padding: 2% !important; }
@@ -2280,7 +2268,7 @@ a.link-pink:hover {
 	.padding-right-lg-200 { padding-right: 200px !important; }
 
 
-	/* Padding (percent) 
+	/* Padding (percent)
 	===================== */
 	.padding-lg-1-p { padding: 1% !important; }
 	.padding-lg-2-p { padding: 2% !important; }
@@ -2599,7 +2587,7 @@ a.link-pink:hover {
 	.padding-right-xlg-200 { padding-right: 200px !important; }
 
 
-	/* Padding (percent) 
+	/* Padding (percent)
 	===================== */
 	.padding-xlg-1-p { padding: 1% !important; }
 	.padding-xlg-2-p { padding: 2% !important; }
@@ -2723,9 +2711,9 @@ a.link-pink:hover {
  * Margin classes
 /* ------------------------------------------------------------- */
 
-.margin-auto { 
-	margin-left: auto !important; 
-	margin-right: auto !important; 
+.margin-auto {
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 .margin-5 { margin: 5px !important; }
@@ -2928,7 +2916,7 @@ a.link-pink:hover {
 .margin-right-200 { margin-right: 200px !important; }
 
 
-/* Margin (percent) 
+/* Margin (percent)
 ===================== */
 .margin-1-p { margin: 1% !important; }
 .margin-2-p { margin: 2% !important; }
@@ -3047,7 +3035,7 @@ a.link-pink:hover {
 .no-margin-right { margin-right: 0 !important; }
 
 
-/* Breakpoints 
+/* Breakpoints
 =============== */
 @media (min-width: 576px) {
 	.margin-sm-5 { margin: 5px !important; }
@@ -3250,7 +3238,7 @@ a.link-pink:hover {
 	.margin-right-sm-200 { margin-right: 200px !important; }
 
 
-	/* Margin (percent) 
+	/* Margin (percent)
 	===================== */
 	.margin-sm-1-p { margin: 1% !important; }
 	.margin-sm-2-p { margin: 2% !important; }
@@ -3569,7 +3557,7 @@ a.link-pink:hover {
 	.margin-right-md-200 { margin-right: 200px !important; }
 
 
-	/* Margin (percent) 
+	/* Margin (percent)
 	===================== */
 	.margin-md-1-p { margin: 1% !important; }
 	.margin-md-2-p { margin: 2% !important; }
@@ -3888,7 +3876,7 @@ a.link-pink:hover {
 	.margin-right-lg-200 { margin-right: 200px !important; }
 
 
-	/* Margin (percent) 
+	/* Margin (percent)
 	===================== */
 	.margin-lg-1-p { margin: 1% !important; }
 	.margin-lg-2-p { margin: 2% !important; }
@@ -4207,7 +4195,7 @@ a.link-pink:hover {
 	.margin-right-xlg-200 { margin-right: 200px !important; }
 
 
-	/* Margin (percent) 
+	/* Margin (percent)
 	===================== */
 	.margin-xlg-1-p { margin: 1% !important; }
 	.margin-xlg-2-p { margin: 2% !important; }
@@ -4527,7 +4515,7 @@ body.tt-boxed .tt-wrap .tt-row {
 }
 
 
-/* Breakpoints 
+/* Breakpoints
 =============== */
 @media (min-width: 576px) {
 	.tt-col-sm {

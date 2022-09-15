@@ -1,14 +1,3 @@
-/* --------------------------------------------------------------------
-* Template Master Stylesheet
-*
-* Template:		Nui - Creative Portfolio Showcase HTML Website Template
-* Author:		Themetorium
-* URL:			https://themetorium.net/
-*
-* Body Font (global): 'Rubik', sans-serif;
-* Secondary Font: 'Syne', sans-serif;
-* Main color:  #b12c0d;
--------------------------------------------------------------------- */
 
 
 /* Table of Content
@@ -79,8 +68,8 @@
 /* ------------------------------------------------------------- */
 
 :root {
-	--tt-main-bg-color: #0a0a0a; /* Change the template background color here. */
-	--tt-main-color: #b12c0d; /* Change the template main color here. */
+	--tt-main-bg-color: #121212; /*  background color here. */
+	--tt-main-color: #b12c0d; /* main color here. */
 }
 
 
@@ -2048,8 +2037,7 @@ body:not(.tt-boxed) .page-header-inner,
 .ph-caption-title {
 	position: relative;
 	margin: 0;
-	font-size: 12px;
-	/* font-size: clamp(38px, 5vw, 82px); */
+	font-size: clamp(38px, 5vw, 82px);
 	font-weight: bold;
 	font-weight: 600;
 	color: #FFF;
@@ -8909,10 +8897,14 @@ body.tt-boxed .blog-single-inner.tt-wrap {
 	width: 100%;
 	font-size: 14px;
 	z-index: 2;
+	/* background-image:  url("../img/footer-background.jpg"); */
+	/* background-size: cover; */
+	height: 10vh;
 }
 
 .tt-footer-inner {
 	position: relative;
+
 }
 body:not(.tt-boxed) .tt-footer-inner,
 .tt-footer-inner:not(.tt-wrap) {

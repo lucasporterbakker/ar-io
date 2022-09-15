@@ -1,12 +1,3 @@
-/* --------------------------------------------------------------------
-* Template Light Stylesheet
-*
-* Template:		Nui - Creative Portfolio Showcase HTML Website Template
-* Author:		Themetorium
-* URL:			https://themetorium.net/
-*
--------------------------------------------------------------------- */
-
 
 /* Table of Content
 ====================
@@ -52,9 +43,9 @@
 /* ------------------------------------------------------------- */
 
 :root {
-	--tt-main-bg-color: #f3f3f3; /* Change the template background color here (you can play with some light variations). */
-	--tt-main-color: #b12c0d; /* Change the template main color here. */
-	--tt-ghost-color: #e9e8e5; /* Change the title ghost color here. */
+	--tt-main-bg-color: #fafafa;
+	--tt-main-color: #323232;
+	--tt-ghost-color: #e9e8e5;
 }
 
 

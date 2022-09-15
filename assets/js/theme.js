@@ -1,11 +1,3 @@
-/* =================================================================
-* Template JS
-*
-* Template:    Nui - Creative Portfolio Showcase HTML Website Template
-* Author:      Themetorium
-* URL:         https://themetorium.net/
-================================================================= */
-
 
 // Table of Content
 // =================
