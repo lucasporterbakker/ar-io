@@ -8887,6 +8887,11 @@ body.tt-boxed .blog-single-inner.tt-wrap {
 	}
 }
 
+.hills {
+	background-image:  url("../img/ario-hills.svg");
+	background-size:auto;
+}
+
 
 /* ------------------------------------------------------------- *
  * Footer
@@ -8899,7 +8904,8 @@ body.tt-boxed .blog-single-inner.tt-wrap {
 	z-index: 2;
 	/* background-image:  url("../img/footer-background.jpg"); */
 	/* background-size: cover; */
-	height: 10vh;
+	/* background-image:  url("../img/footer-background.jpg"); */
+	height: 8vh;
 }
 
 .tt-footer-inner {
