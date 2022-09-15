@@ -2048,7 +2048,8 @@ body:not(.tt-boxed) .page-header-inner,
 .ph-caption-title {
 	position: relative;
 	margin: 0;
-	font-size: clamp(38px, 5vw, 82px);
+	font-size: 12px;
+	/* font-size: clamp(38px, 5vw, 82px); */
 	font-weight: bold;
 	font-weight: 600;
 	color: #FFF;

@@ -1,6 +1,6 @@
 /* =================================================================
 * Template JS
-* 
+*
 * Template:    Nui - Creative Portfolio Showcase HTML Website Template
 * Author:      Themetorium
 * URL:         https://themetorium.net/
@@ -16,7 +16,7 @@
 // Magic cursor
 // Image lazy loading
 // Main menu (classic)
-// Overlay menu 
+// Overlay menu
 // Portfolio slider
 // Portfolio carousel
 // Blog carousel
@@ -35,8 +35,8 @@
 // Sidebar (classic)
 // Sliding sidebar
 // Scrolling text
-// Scroll between anchors 
-// Scroll to top 
+// Scroll between anchors
+// Scroll to top
 // Defer videos
 // Forms
 // Miscellaneous
@@ -75,7 +75,7 @@
 	if(isMobile) {
 		$("body").addClass("is-mobile");
 	}
-	
+
 
 
 	// =================
@@ -83,7 +83,7 @@
 	// =================
 
 	if ($("body").hasClass("tt-transition")) {
-		
+
 		// Wait until the whole page is loaded.
 		$(window).on("load", function () {
 			setTimeout(function(){
@@ -131,7 +131,7 @@
 				 		tl_transitOut.from(".ph-image", { duration: 2, y: 80, autoAlpha: 0, stagger: 0.3, ease: Expo.easeOut, clearProps:"all" }, 1.2);
 				 	}
 				 }
-				 
+
 				 // Page header elements appear (elements with class "ph-appear")
 				 var $phAppear = $(".ph-appear");
 				 if ($phAppear.length) {
@@ -196,7 +196,7 @@
 					 	tl_transitOut.from($ssTrigger, { duration: 1.5, autoAlpha: 0, y: 20, ease: Expo.easeOut }, 2);
 					 }
 				 }
-				 
+
 				 // Page other elements appear
 				 if ($("#page-content").length) {
 				 	tl_transitOut.from("#page-content", { duration: 2, autoAlpha: 0, y: 80, ease: Expo.easeOut, clearProps:"all" }, 0.8);
@@ -233,7 +233,7 @@
 				setTimeout(function (url) {
 					window.location = url
 				}, 1500, this.href);
-				
+
 				RevealLoad(); // call in animations.
 		});
 
@@ -250,7 +250,7 @@
 
 		// Not for mobile devices!
 		if(!isMobile) {
-			
+
 			var Scrollbar = window.Scrollbar;
 
 			// AnchorPlugin (URL with hash links load in the right position)
@@ -322,7 +322,7 @@
 				scrollPositionY = 0,
 				bodyScrollBar = Scrollbar.init(document.getElementById("scroll-container"));
 
-			bodyScrollBar.addListener(({ offset }) => {  
+			bodyScrollBar.addListener(({ offset }) => {
 				scrollPositionX = offset.x;
 				scrollPositionY = offset.y;
 			});
@@ -340,7 +340,7 @@
 				}
 			});
 
-			// when smooth scroller updates, tell ScrollTrigger to update() too. 
+			// when smooth scroller updates, tell ScrollTrigger to update() too.
 			bodyScrollBar.addListener(ScrollTrigger.update);
 
 
@@ -362,11 +362,11 @@
 	// https://codepen.io/Sahil89/pen/MQbdNR
 	// https://greensock.com/forums/topic/17490-follow-button-effect/?tab=comments#comment-81107
 	// =======================================================================================
-	
+
 	if ($("body").not(".is-mobile").hasClass("tt-magic-cursor")) {
 		if ($(window).width() > 1024) {
 			$(".magnetic-item").wrap('<div class="magnetic-wrap"></div>');
-			
+
 			if ($("a.magnetic-item").length) {
 				$("a.magnetic-item").addClass("not-hide-cursor");
 			}
@@ -383,12 +383,12 @@
 			var $ballBorderWidth = 2; // Ball default border width
 
 			gsap.set($ball, {  // scale from middle and style ball
-				xPercent: -50, 
-				yPercent: -50, 
+				xPercent: -50,
+				yPercent: -50,
 				width: $ballWidth,
 				height: $ballHeight,
-				borderWidth: $ballBorderWidth, 
-				opacity: $ballOpacity 
+				borderWidth: $ballBorderWidth,
+				opacity: $ballOpacity
 			});
 
 			document.addEventListener("mousemove", mouseMove);
@@ -424,7 +424,7 @@
 				var relY = e.clientY - boundingRect.top;
 
 				gsap.to(target, {
-					duration: 0.3, 
+					duration: 0.3,
 					x: ((relX - boundingRect.width / 2) / boundingRect.width) * movement,
 					y: ((relY - boundingRect.height / 2) / boundingRect.height) * movement,
 					ease: Power2.easeOut
@@ -461,22 +461,22 @@
 			.not(".magnetic-item") // omit from selection.
 			.on("mouseenter", function() {
 				gsap.to($ball, {
-					duration: 0.3, 
-					borderWidth: 0, 
-					opacity: 0.2, 
-					backgroundColor: "#CCC", 
-					width: "100px", 
-					height: "100px", 
+					duration: 0.3,
+					borderWidth: 0,
+					opacity: 0.2,
+					backgroundColor: "#CCC",
+					width: "100px",
+					height: "100px",
 				});
 			}).on("mouseleave", function() {
 				gsap.to($ball, {
-					duration: 0.3, 
-					borderWidth: $ballBorderWidth, 
-					opacity: $ballOpacity, 
-					backgroundColor: "transparent", 
-					width: $ballWidth, 
-					height: $ballHeight, 
-					clearProps:"backgroundColor" 
+					duration: 0.3,
+					borderWidth: $ballBorderWidth,
+					opacity: $ballOpacity,
+					backgroundColor: "transparent",
+					width: $ballWidth,
+					height: $ballHeight,
+					clearProps:"backgroundColor"
 				});
 			});
 
@@ -525,7 +525,7 @@
 					}
 				}
 			});
-			
+
 			// Cursor drag on mouse down / click and hold effect (class "cursor-drag-mouse-down"). For Swiper sliders.
 			$(".swiper").each(function() {
 				if ($(this).parent().attr("data-simulate-touch") == "true") {
@@ -594,7 +594,7 @@
 						gsap.to($ball, { duration: 0.3, width: "20vw", height: "20vw", opacity: 1 });
 					}).on("mouseleave", function() {
 						$("#magic-cursor").removeClass("blog-interactive-hover-on");
-						$ball.find(".bi-item-image").appendTo($biItem); 
+						$ball.find(".bi-item-image").appendTo($biItem);
 						gsap.to($ball, { duration: 0.3, width: $ballWidth, height: $ballHeight, opacity: $ballOpacity });
 					});
 					$biItem.find(".bi-item-title a").addClass("not-hide-cursor");
@@ -602,7 +602,7 @@
 				}
 			});
 
-			
+
 			// Show/hide magic cursor
 			// =======================
 
@@ -642,7 +642,7 @@
 				gsap.to("#magic-cursor", {duration: 0.3, autoAlpha: 1 });
 			});
 		}
-	} 
+	}
 
 
 
@@ -653,7 +653,7 @@
 	ScrollTrigger.config({ limitCallbacks: true });
 
 	gsap.utils.toArray(".tt-lazy").forEach(image => {
-		
+
 		let newSRC = image.dataset.src,
 			 newImage = document.createElement("img"),
 
@@ -664,15 +664,15 @@
 				image.src = newSRC;
 				// place the low-res version on TOP and then fade it out.
 				gsap.set(newImage, {
-					position: "absolute", 
-					top: image.offsetTop, 
-					left: image.offsetLeft, 
-					width: image.offsetWidth, 
+					position: "absolute",
+					top: image.offsetTop,
+					left: image.offsetLeft,
+					width: image.offsetWidth,
 					height: image.offsetHeight
 				});
 				image.parentNode.appendChild(newImage);
 				gsap.to(newImage, {
-					opacity: 0, 
+					opacity: 0,
 					onComplete: () => {
 						newImage.parentNode.removeChild(newImage);
 						image.removeAttribute("data-src"); // remove "data-src" attribute if image is loaded
@@ -683,7 +683,7 @@
 			newImage.src = newSRC;
 
 			ScrollTrigger.refresh(true);
-		}, 
+		},
 
 		st = ScrollTrigger.create({
 			trigger: image,
@@ -709,7 +709,7 @@
 			if (menupos.left + menu.width() > $(window).width()) {
 				var newpos = -$(menu).width();
 
-				menu.css({ left: newpos });    
+				menu.css({ left: newpos });
 			}
 		});
 	}
@@ -743,8 +743,8 @@
 
 			// Menu in animations
 			var tl_MenuIn = gsap.timeline({
-				onComplete: function() { 
-					$("body").removeClass("tt-m-menu-toggle-no-click"); 
+				onComplete: function() {
+					$("body").removeClass("tt-m-menu-toggle-no-click");
 				}
 			});
 
@@ -762,15 +762,15 @@
 				gsap.to(".tt-main-menu-content > ul > li", { duration: 0.4, y: -80, autoAlpha: 0, stagger: 0.05, ease: Power2.easeIn });
 			});
 
-		} else {	
+		} else {
 
 			// Menu step out animations
 			$("body").addClass("tt-m-menu-toggle-no-click"); // Disable toggle button click until the animations last.
 
 			// Menu out animations
 			var tl_MenuOut = gsap.timeline({
-				onComplete: function() { 
-					$("body").removeClass("tt-m-menu-toggle-no-click"); 
+				onComplete: function() {
+					$("body").removeClass("tt-m-menu-toggle-no-click");
 				}
 			});
 
@@ -826,7 +826,7 @@
 
 
 	// ==================================================
-	// Overlay menu 
+	// Overlay menu
 	// ==================================================
 
 	// Add class "tt-header-fixed-on" to <body> if "tt-header-fixed" enabled.
@@ -837,7 +837,7 @@
 	// On menu toggle button click
 	// ============================
 	var $olMenuToggleBtn = $(".tt-ol-menu-toggle-btn-text, .tt-ol-menu-toggle-btn");
-	
+
 	$olMenuToggleBtn.on("click", function() {
 		$("html").toggleClass("tt-no-scroll");
 		$("body").toggleClass("tt-ol-menu-open").addClass("tt-ol-menu-active");
@@ -847,8 +847,8 @@
 			$("body").addClass("olm-toggle-no-click"); // Disable toggle button click until the animations last.
 
 			var tl_olMenuIn = gsap.timeline({
-				onComplete: function() { 
-					$("body").removeClass("olm-toggle-no-click"); 
+				onComplete: function() {
+					$("body").removeClass("olm-toggle-no-click");
 				}
 			});
 
@@ -912,14 +912,14 @@
 				});
 			}
 
-		} else {	
+		} else {
 
 			// Menu step out animations
 			$("body").addClass("olm-toggle-no-click"); // Disable toggle button click until the animations last.
 
 			var tl_olMenuOut = gsap.timeline({
-				onComplete: function() { 
-					$("body").removeClass("olm-toggle-no-click"); 
+				onComplete: function() {
+					$("body").removeClass("olm-toggle-no-click");
 				}
 			});
 				 tl_olMenuOut.to(".tt-ol-menu-list > li", { duration: 0.4, y: -80, autoAlpha: 0, stagger: 0.05, ease: Power2.easeIn });
@@ -958,7 +958,7 @@
 
 			}, 900);
 		}
-		
+
 		return false;
 	});
 
@@ -1092,7 +1092,7 @@
 						// Play video on load
 						$slideActive.find("video").each(function() {
 							$(this).get(0).play();
-						}); 
+						});
 
 						// Portfolio slider caption on load
 						// ---------------------------------
@@ -1125,7 +1125,7 @@
 						// Play video
 						$slideActive.find("video").each(function() {
 							$(this).get(0).play();
-						}); 
+						});
 					},
 
 					transitionEnd: function () {
@@ -1231,7 +1231,7 @@
 			if ($ttPortfolioCarousel.is("[data-speed]")) {
 				var $dataSpeed = $ttPortfolioCarousel.data("speed"); // speed for larger screens
 			} else {
-				var $dataSpeed = 1200; // speed for larger screens (by default) 
+				var $dataSpeed = 1200; // speed for larger screens (by default)
 			}
 
 			if ($ttPortfolioCarousel.is("[data-pagination-type]")) {
@@ -1329,7 +1329,7 @@
 						// Play video
 						$(".swiper-slide-active").find("video").each(function() {
 							$(this).get(0).play();
-						}); 
+						});
 
 						// Disable nav arrow action.
 						$(".tt-pc-arrow").addClass("tt-pc-arrow-disabled");
@@ -1351,7 +1351,7 @@
 						$(".swiper-slide-prev").find("video").each(function() {
 							$(this).get(0).pause();
 						});
-						
+
 						$(".swiper-slide-next").find("video").each(function() {
 							$(this).get(0).pause();
 						});
@@ -1371,13 +1371,13 @@
 							gsap.to($ttPortfolioCarousel.find(".tt-pci-inner"), { duration: 0.7, scale: 0.9 });
 						}
 					});
-					$("body").on("mouseup touchend pointerup mouseleave", function() {	
+					$("body").on("mouseup touchend pointerup mouseleave", function() {
 						gsap.to($ttPortfolioCarousel.find(".tt-pci-inner"), { duration: 0.7, scale: 1, clearProps: "scale" });
 					});
 				}
 			}
 
-			// Update slider when windows resize or orientation change 
+			// Update slider when windows resize or orientation change
 			$(window).on("resize orientationchange", function() {
 				setTimeout(function(){
 					$ttPortfolioCarouselSwiper.update();
@@ -1566,7 +1566,7 @@
 						// Play video
 						$(".swiper-slide-active").find("video").each(function() {
 							$(this).get(0).play();
-						}); 
+						});
 
 					},
 
@@ -1576,7 +1576,7 @@
 						$(".swiper-slide-prev").find("video").each(function() {
 							$(this).get(0).pause();
 						});
-						
+
 						$(".swiper-slide-next").find("video").each(function() {
 							$(this).get(0).pause();
 						});
@@ -1594,7 +1594,7 @@
 							gsap.to($ttContentCarousel.find(".tt-content-carousel-item"), { duration: 0.7, scale: 0.9 });
 						}
 					});
-					$("body").on("mouseup touchend pointerup mouseleave", function() {	
+					$("body").on("mouseup touchend pointerup mouseleave", function() {
 						gsap.to($ttContentCarousel.find(".tt-content-carousel-item"), { duration: 0.7, scale: 1, clearProps: "scale" });
 					});
 				}
@@ -1675,7 +1675,7 @@
 						gsap.to($ttTestimonialsSlider.find(".tt-ts-item-inner"), { duration: 0.7, scale: 0.9 });
 					}
 				});
-				$("body").on("mouseup touchend pointerup", function() {	
+				$("body").on("mouseup touchend pointerup", function() {
 					gsap.to($ttTestimonialsSlider.find(".tt-ts-item-inner"), { duration: 0.7, scale: 1, clearProps: "scale" });
 				});
 			}
@@ -1743,7 +1743,7 @@
 
 		// Please read about gallery options here: http://sachinchoolur.github.io/lightGallery/docs/api.html
 
-		// lightGallery core 
+		// lightGallery core
 		selector: '.lg-trigger',
 		mode: 'lg-fade', // Type of transition between images ('lg-fade' or 'lg-slide').
 		height: '100%', // Height of the gallery (ex: '100%' or '300px').
@@ -1802,7 +1802,7 @@
 		// Vimeo video options
 		loadVimeoThumbnail: true, // You can automatically load thumbnails for vimeo videos from vimeo by setting loadYoutubeThumbnail true.
 		vimeoThumbSize: 'thumbnail_medium', // Thumbnail size for vimeo videos: 'thumbnail_large' or 'thumbnail_medium' or 'thumbnail_small'.
-		vimeoPlayerParams: { // Change vimeo player parameters: https://developer.vimeo.com/player/embedding#universal-parameters 
+		vimeoPlayerParams: { // Change vimeo player parameters: https://developer.vimeo.com/player/embedding#universal-parameters
 			byline : 1,
 			portrait : 1,
 			title: 1,
@@ -1895,11 +1895,11 @@
 	// Page header elements scrolling effects
 	// =======================================
 	if ($("#page-header").hasClass("ph-content-parallax")) {
-		let tlPhParallax = gsap.timeline({ 
+		let tlPhParallax = gsap.timeline({
 			scrollTrigger: {
-				trigger: "#page-header", 
-				start: 'top top', 
-				end: 'bottom top', 
+				trigger: "#page-header",
+				start: 'top top',
+				end: 'bottom top',
 				scrub: true,
 				markers: false
 			}
@@ -1963,7 +1963,7 @@
 
 		// Page header scroll down circle
 		if ($(".tt-scroll-down").length) {
-			gsap.to(".tt-scroll-down", { 
+			gsap.to(".tt-scroll-down", {
 				// y: 100,
 				autoAlpha: 0,
 				ease: "none",
@@ -1973,13 +1973,13 @@
 					end: "30% top",
 					scrub: true,
 					markers: false
-				}, 
+				},
 			});
 		}
 
 		// Page header projekt share
 		if ($(".ph-share").length) {
-			gsap.to(".ph-share-inner", { 
+			gsap.to(".ph-share-inner", {
 				// y: 100,
 				autoAlpha: 0,
 				ease: "none",
@@ -1989,7 +1989,7 @@
 					end: "30% top",
 					scrub: true,
 					markers: false
-				}, 
+				},
 			});
 		}
 	}
@@ -2074,7 +2074,7 @@
 		} else {
 
 			// Hide trigger before it reaches the top when page scroll
-			gsap.to($ttgCatTriggerWrap, { 
+			gsap.to($ttgCatTriggerWrap, {
 				yPercent: 70,
 				autoAlpha: 0,
 				ease: "none",
@@ -2084,7 +2084,7 @@
 					end: "100px 250px",
 					scrub: true,
 					markers: false
-				}, 
+				},
 			});
 
 		}
@@ -2129,7 +2129,7 @@
 			}
 		});
 	});
-	
+
 
 	// Image parallax
 	// ===============
@@ -2170,7 +2170,7 @@
 			}
 		});
 		tl_aipZoomIn.from($aipInner, { duration: 1.5, autoAlpha: 0, scale: 1.2, ease: Power2.easeOut, clearProps:"all" });
-		
+
 	});
 
 
@@ -2191,7 +2191,7 @@
 						scrub: true,
 						markers: false,
 						onEnter: () => ttgrItemParalRefresh(),
-					}, 
+					},
 				});
 
 				// Refresh start/end positions on enter.
@@ -2217,7 +2217,7 @@
 				end: "bottom bottom",
 				scrub: true,
 				markers: false,
-			}, 
+			},
 		});
 
 		if ($(".tt-np-caption").length) {
@@ -2233,7 +2233,7 @@
 					end: "bottom bottom",
 					scrub: true,
 					markers: false,
-				}, 
+				},
 			});
 		}
 
@@ -2251,7 +2251,7 @@
 					end: "bottom bottom",
 					scrub: true,
 					markers: false,
-				}, 
+				},
 			});
 		}
 	}
@@ -2323,7 +2323,7 @@
 		var proxy = { skew: 0 },
 			 skewSetter = gsap.quickSetter(skewElement, "skewY", "deg"),
 			 clamp = gsap.utils.clamp(-skewMaxAngle, skewMaxAngle);
-		
+
 		if (skewElement.length) {
 
 			function skewer() {
@@ -2346,7 +2346,7 @@
 						if (arguments.length) {
 							bodyScrollBar.scrollTop = value;
 						}
-						return bodyScrollBar.scrollTop; 
+						return bodyScrollBar.scrollTop;
 					}
 				});
 
@@ -2367,7 +2367,7 @@
 					skewer();
 				} else {
 					skewerIfSmoothScroll();
-				} 
+				}
 			} else {
 				skewer();
 			}
@@ -2393,7 +2393,7 @@
 					end: "120% top",
 					scrub: true,
 					markers: false,
-				}, 
+				},
 			});
 		});
 	}
@@ -2494,7 +2494,7 @@
 				moveFooter();
 			});
 		}
-		
+
 	}
 
 
@@ -2536,7 +2536,7 @@
 			$(this).parents(".portfolio-interactive-item").addClass("pi-item-light-image-on");
 		}
 	});
-	
+
 
 
 
@@ -2548,7 +2548,7 @@
 	$(".portfolio-list-item").on("mouseenter", function() {
 		$(this).find("video").each(function() {
 			$(this).get(0).play();
-		}); 
+		});
 	}).on("mouseleave", function() {
 		$(this).find("video").each(function() {
 			$(this).get(0).pause();
@@ -2589,7 +2589,7 @@
 	$(".pgi-image-wrap").on("mouseenter", function() {
 		$(this).find("video").each(function() {
 			$(this).get(0).play();
-		}); 
+		});
 	}).on("mouseleave", function() {
 		$(this).find("video").each(function() {
 			$(this).get(0).pause();
@@ -2615,7 +2615,7 @@
 			// Catecories step in animations.
 			var tl_ttgrIn = gsap.timeline({
 				// Wait until the timeline is completed then make "ttgr-cat-nav" clickable again.
-				onComplete: function() {  
+				onComplete: function() {
 					ttCatNavClose();
 				}
 			});
@@ -2659,7 +2659,7 @@
 	$(".tt-gallery-video-wrap").on("mouseenter", function() {
 		$(this).find("video").each(function() {
 			$(this).get(0).play();
-		}); 
+		});
 	}).on("mouseleave", function() {
 		$(this).find("video").each(function() {
 			$(this).get(0).pause();
@@ -2747,10 +2747,10 @@
 		// Open/close sliding sidebar.
 		$(".tt-sliding-sidebar-trigger").on("click", function() {
 			$("body").toggleClass("tt-sliding-sidebar-open");
-		}); 
+		});
 		$(".tt-sliding-sidebar-close").on("click", function() {
 			$("body").removeClass("tt-sliding-sidebar-open");
-		}); 
+		});
 
 		// If sliding sidebar has class "tt-ss-right" add class "tt-ss-right-on" to <pody>.
 		if ($(".tt-sliding-sidebar-wrap").hasClass("tt-ss-right")) {
@@ -2768,7 +2768,7 @@
 	// Hover scrolling speed.
 	$(".tt-scrolling-text").each(function() {
 		var $tt_stSpeed = $(this).data("scroll-speed");
-		$(this).find(".tt-scrolling-text-inner").css({ 
+		$(this).find(".tt-scrolling-text-inner").css({
 			"animation-duration": $tt_stSpeed + "s",
 		});
 	});
@@ -2776,7 +2776,7 @@
 
 
 	// ================================================================
-	// Scroll between anchors 
+	// Scroll between anchors
 	// Requires "Smooth Scrollbar" (https://github.com/idiotWu/smooth-scrollbar/blob/develop/docs/api.md#scrollbarscrollintoview)
 	// ================================================================
 
@@ -2794,9 +2794,9 @@
 			var $offset = 0;
 		}
 
-		// You can use data attribute (for example: data-offset="100") to set top offset in HTML markup if needed. 
+		// You can use data attribute (for example: data-offset="100") to set top offset in HTML markup if needed.
 		if ($(this).data("offset") != undefined) $offset = $(this).data("offset");
-		
+
 		if(!isMobile) { // Not for mobile devices!
 			if ($("body").hasClass("tt-smooth-scroll")) {
 				var topY = $(target).offset().top - $("#scroll-container > .scroll-content").offset().top - $offset;
@@ -2817,7 +2817,7 @@
 
 
 	// ================================================================
-	// Scroll to top 
+	// Scroll to top
 	// Requires "GSAP ScrollToPlugin" (https://greensock.com/docs/v2/Plugins/ScrollToPlugin)
 	// ================================================================
 
@@ -2833,7 +2833,7 @@
 			$("html,body").animate({scrollTop: 0}, 800);
 		}
 		return false;
-	}); 
+	});
 
 
 
@@ -2864,7 +2864,7 @@
 			.attr("placeholder", "");
 	}).blur(function () {
 		$(this).attr("placeholder", $(this).data("placeholder"));
-	}); 
+	});
 
 	// Form "Browse File" button info
 	$(document).on("change", ":file", function() {
@@ -2885,7 +2885,7 @@
 	});
 
 
-	// Universal PHP Mail Feedback Script 
+	// Universal PHP Mail Feedback Script
 	// (https://github.com/agragregra/uniMail)
 	// ========================================
 
@@ -2928,8 +2928,8 @@
 	// Click on style switch
 	$(".tt-style-switch").on("click", function() {
 		$("body").toggleClass("tt-light-style-on");
-		$("body").hasClass("tt-light-style-on") ? (localStorage.setItem("lightstyle", "true"), 
-		$(".tt-style-switch").addClass("is-dark")) : (localStorage.setItem("lightstyle", "false"), 
+		$("body").hasClass("tt-light-style-on") ? (localStorage.setItem("lightstyle", "true"),
+		$(".tt-style-switch").addClass("is-dark")) : (localStorage.setItem("lightstyle", "false"),
 		$(".tt-style-switch").removeClass("is-dark"));
 
 		location.reload();
@@ -2959,7 +2959,7 @@
 	$(".tt-btn-disabled").on("click", function() {
 		return false;
 	});
-	
+
 
 	// Force page scroll position to top on refresh (do not remove!)
 	// =============================================
@@ -2978,4 +2978,4 @@
 
 
 
-})(jQuery); 
+})(jQuery);
