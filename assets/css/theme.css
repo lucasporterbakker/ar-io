@@ -458,7 +458,7 @@ body.tt-magic-cursor #magic-cursor {
 	align-items: center;
 	color: #FFF;
 	pointer-events: none;
-	border-style: solid;
+	border-style: none;
 	border-radius: 50%;
 	border-color: #FFF;
 	/* Note: border width handled through JS */
@@ -468,10 +468,10 @@ body.tt-magic-cursor #magic-cursor {
 /* Ball view
 ============= */
 #ball.ball-view {
-	background-color: var(--tt-main-color);
+	background-color: #FFBB38;
 	font-size: 15px;
-	font-weight: 500;
-	color: #FFF;
+	font-weight: 600;
+	color: #121212;
 	line-height: 1.2;
 	text-align: center;
 }
@@ -6442,7 +6442,8 @@ body:not(.is-mobile) .tt-btn:hover .tt-btn-line {
 	transition: fill .2s;
 }
 .tt-scrolling-btn:hover .scr-btn-text {
-	fill: #FFF;
+	fill: #FFBB38;
+	/* fill: #fafafa; */
 }
 
 
