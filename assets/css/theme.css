@@ -9366,3 +9366,10 @@ body:not(.is-mobile) .tt-style-switch:hover {
 		border-radius: 0 50px 50px 0;
 	}
 }
+
+
+.community-banner {
+	/* background-image: url("../img/background.png"); */
+	/* background-image: linear-gradient(RGBA(18, 18, 18, .9), RGBA(18, 18, 18, .9)), url("../img/ario-hills.svg");
+	background-size: cover; */
+}
