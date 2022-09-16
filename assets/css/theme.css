@@ -468,7 +468,12 @@ body.tt-magic-cursor #magic-cursor {
 /* Ball view
 ============= */
 #ball.ball-view {
-	background-color: #FFBB38;
+
+	/* background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+	/* background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+	/* background-color: #FFBB38; */
+
+	background-color: #fafafa;
 	font-size: 15px;
 	font-weight: 600;
 	color: #121212;
@@ -6443,7 +6448,6 @@ body:not(.is-mobile) .tt-btn:hover .tt-btn-line {
 }
 .tt-scrolling-btn:hover .scr-btn-text {
 	fill: #FFBB38;
-	/* fill: #fafafa; */
 }
 
 
