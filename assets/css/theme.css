@@ -159,7 +159,7 @@ hr {
 ::selection {
 	color: #fff;
 	text-shadow: none;
-	background: var(--tt-main-color);
+	background: #333;
 }
 ::-moz-selection {
 	color: #fff;
