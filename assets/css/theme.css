@@ -8919,7 +8919,8 @@ body.tt-boxed .blog-single-inner.tt-wrap {
 	/* background-image:  url("../img/footer-background.jpg"); */
 	/* background-size: cover; */
 	/* background-image:  url("../img/footer-background.jpg"); */
-	height: 8vh;
+	height: 12vh;
+	background-color: #171717;
 }
 
 .tt-footer-inner {
