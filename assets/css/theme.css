@@ -3988,7 +3988,7 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
 .pi-item-title-link::before {
 	position: absolute;
 	counter-increment: pi-item-counter;
-	content: "" counter(pi-item-counter, decimal-leading-zero);
+	/* content: "" counter(pi-item-counter, decimal-leading-zero); */
 	top: 10px;
 	right: -20px;
 	line-height: 1;
