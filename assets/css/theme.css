@@ -6352,6 +6352,15 @@ button {
 	color: #FFF;
 }
 
+.tt-btn-link-form {
+	padding: 0;
+	align-items: center;
+	font-weight: normal;
+	border-radius: 0;
+	/* line-height: 1.6; */
+}
+
+
 
 /* Button line (alternative to the icon)
 =============== */
