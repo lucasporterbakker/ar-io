@@ -8919,8 +8919,8 @@ body.tt-boxed .blog-single-inner.tt-wrap {
 	/* background-image:  url("../img/footer-background.jpg"); */
 	/* background-size: cover; */
 	/* background-image:  url("../img/footer-background.jpg"); */
-	height: 20vh;
-	background-color: #171717;
+	height: 10vh;
+	/* background-color: #171717; */
 }
 
 .tt-footer-inner {
@@ -9098,6 +9098,7 @@ body:not(.tt-boxed) .tt-footer-inner,
 @media (max-width: 1024px) {
 	#tt-footer {
 		padding: 60px 0;
+		height: auto;
 	}
 	.tt-footer-inner {
 		display: flex;
@@ -9107,7 +9108,7 @@ body:not(.tt-boxed) .tt-footer-inner,
 	/* Footer columns */
 	.footer-col {
 		display: block;
-		margin-bottom: 10px;
+		margin-bottom: 50px;
 		text-align: center;
 	}
 	.footer-col:first-child {
