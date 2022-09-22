@@ -56,6 +56,7 @@
 body {
 	background-color: var(--tt-main-bg-color);
 	color: #333;
+	background-image: url("../img/background2.jpg")
 }
 
 .text-gray {
@@ -235,6 +236,7 @@ body.tt-np-image-on.tt-next-project-top:not(.tt-light-bg-on):not(.is-mobile):not
 
 .tt-overlay-menu {
 	background-color: var(--tt-main-bg-color);
+	background-image: url('../img/background2.jpg');
 }
 .tt-ol-menu-ghost {
 	color: var(--tt-ghost-color);
