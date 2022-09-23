@@ -56,7 +56,8 @@
 body {
 	background-color: var(--tt-main-bg-color);
 	color: #333;
-	background-image: url("../img/background2.jpg")
+	background-image: url("../img/background2.jpg");
+	background-size: cover;
 }
 
 .text-gray {
@@ -68,7 +69,7 @@ body {
 }
 
 .text-stroke-light {
-	-webkit-text-stroke-color: #111;
+	-webkit-text-stroke-color: RGBA(18, 18, 18, .25);
 }
 
 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
@@ -237,6 +238,7 @@ body.tt-np-image-on.tt-next-project-top:not(.tt-light-bg-on):not(.is-mobile):not
 .tt-overlay-menu {
 	background-color: var(--tt-main-bg-color);
 	background-image: url('../img/background2.jpg');
+	background-size: cover;
 }
 .tt-ol-menu-ghost {
 	color: var(--tt-ghost-color);
@@ -908,4 +910,14 @@ body:not(.tt-np-image-on):not(.tt-portfolio-slider-on):not(.tt-ph-visible) #tt-f
 
 body:not(.tt-np-image-on):not(.tt-portfolio-slider-on):not(.tt-ph-visible) #tt-footer .tt-btn-line {
 	background-color: #111;
+}
+
+.ario {
+	color: #fafafa !important;
+	background-color: #121212 !important;
+	font-weight: 800;
+}
+
+.ario-caption {
+	background-color: transparent !important;
 }

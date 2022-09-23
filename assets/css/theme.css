@@ -2050,6 +2050,17 @@ body:not(.tt-boxed) .page-header-inner,
 	z-index: 9;
 }
 
+.ario {
+	color: #121212 !important;
+	background-color: #fafafa !important;
+	font-weight: 800;
+}
+
+.ario-caption {
+	background-color: #121212 !important;
+}
+
+
 /* page header caption title ghost */
 .ph-caption-title-ghost {
 	position: absolute;
