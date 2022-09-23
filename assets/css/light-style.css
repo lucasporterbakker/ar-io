@@ -920,4 +920,5 @@ body:not(.tt-np-image-on):not(.tt-portfolio-slider-on):not(.tt-ph-visible) #tt-f
 
 .ario-caption {
 	background-color: transparent !important;
+	font-weight: 800;
 }

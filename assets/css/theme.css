@@ -94,6 +94,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	color: #FFF;
 	overflow-x: hidden;
+	/* background-image: url("../img/background3.jpg");
+	background-size: cover; */
 }
 
 p {
@@ -2058,6 +2060,7 @@ body:not(.tt-boxed) .page-header-inner,
 
 .ario-caption {
 	background-color: #121212 !important;
+	font-weight: 800;
 }
 
 
