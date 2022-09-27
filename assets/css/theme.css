@@ -9398,3 +9398,9 @@ body:not(.is-mobile) .tt-style-switch:hover {
 	/* background-image: linear-gradient(RGBA(18, 18, 18, .9), RGBA(18, 18, 18, .9)), url("../img/ario-hills.svg");
 	background-size: cover; */
 }
+
+@media (max-width: 540px) {
+	.subscribe-hide i{
+		display: none;
+	}
+}
