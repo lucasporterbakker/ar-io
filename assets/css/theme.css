@@ -9404,3 +9404,14 @@ body:not(.is-mobile) .tt-style-switch:hover {
 		display: none;
 	}
 }
+
+
+.diagram img {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-style: solid;
+	/* border-style: outset; */
+ 	border-color: #333333;
+ 	border-width: 3px;
+ border-radius: 1px;
+}
