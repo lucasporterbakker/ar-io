@@ -922,3 +922,17 @@ body:not(.tt-np-image-on):not(.tt-portfolio-slider-on):not(.tt-ph-visible) #tt-f
 	background-color: transparent !important;
 	font-weight: 800;
 }
+
+.start-button-cta {
+	background-color: #121212 !important;
+	color: #fafafa !important;
+	/* transition: all .10s ease-in-out; */
+}
+
+.start-button-cta:hover {
+	/* transform: scale(1.01); */
+}
+
+.gradient-button-bg {
+	background: #fff !important;
+}

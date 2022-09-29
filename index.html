@@ -28,6 +28,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+	<script src="https://cdn.tailwindcss.com"></script>
 
 	<!-- Libs and Plugins CSS -->
 	<link rel="stylesheet" href="assets/vendor/normalize/normalize.min.css">
@@ -52,6 +53,28 @@
 	</script> -->
 
 </head>
+<!-- <div class="py-12">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="bg-green-100 rounded-lg">
+            <div class="p-3">
+                <div class="flex items-center justify-between">
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <p class="ml-3 text-sm font-medium text-green-900">New Item has been created</p>
+
+                    <div class="pl-3 ml-auto">
+                        <button type="button" class="inline-flex bg-green-100 rounded-lg -m1.5 p-1.5 text-green-500 hover:bg-green-200 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-100 focus:ring-green-500">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
 
 
 
@@ -176,7 +199,7 @@
 												=================== -->
 												<li class="tt-ol-submenu-wrap">
 													<div class="tt-ol-submenu-trigger">
-														<a href="#" class="tt-ol-submenu-link">FAQs</a>
+														<a href="faq.html" class="tt-ol-submenu-link">FAQs</a>
 														<!-- <div class="tt-ol-submenu-caret-wrap">
 															<div class="tt-ol-submenu-caret magnetic-item"></div>
 														</div>  -->
@@ -577,35 +600,134 @@
 <div class="tt-section padding-top-xlg-120 padding-bottom-xlg-120 bg-white-accent-3">
 	<div class="tt-section-inner">
 
-		<!-- Begin scrolling text
-		==========================
-		Change data-scroll-speed="*" to adjust scrolling speed.
-		Use class "scr-text-reverse" to reverse scrolling direction.
-		Use class "scr-text-stroke" to enable text stroke style (no effect on smaller screens!).
-	-->
-	<div class="tt-scrolling-text" data-scroll-speed="19">
-		<div class="tt-scrolling-text-inner" data-text="7.68B requests served → 950 TB downloaded →">
-			950 TB downloaded →
-		</div> <!-- /.tt-scrolling-text-inner -->
-	</div>
-	<!-- End scrolling text -->
+			<!-- Begin scrolling text
+			==========================
+			Change data-scroll-speed="*" to adjust scrolling speed.
+			Use class "scr-text-reverse" to reverse scrolling direction.
+			Use class "scr-text-stroke" to enable text stroke style (no effect on smaller screens!).
+		-->
+		<div class="tt-scrolling-text" data-scroll-speed="19">
+			<div class="tt-scrolling-text-inner" data-text="7.68B requests served → 950 TB downloaded →">
+				950 TB downloaded →
+			</div> <!-- /.tt-scrolling-text-inner -->
+		</div>
+		<!-- End scrolling text -->
 
-	<!-- Begin scrolling text
-	==========================
-	Change data-scroll-speed="*" to adjust scrolling speed.
-	Use class "scr-text-reverse" to reverse scrolling direction.
-	Use class "scr-text-stroke" to enable text stroke style (no effect on smaller screens!).
--->
-<div class="tt-scrolling-text scr-text-stroke scr-text-reverse" data-scroll-speed="19">
-	<div class="tt-scrolling-text-inner" data-text="256M requests per day → 17.5M new transactions indexed →">
-		17.5M new transactions indexed →
-	</div> <!-- /.tt-scrolling-text-inner -->
-</div>
-<!-- End scrolling text -->
+				<!-- Begin scrolling text
+				==========================
+				Change data-scroll-speed="*" to adjust scrolling speed.
+				Use class "scr-text-reverse" to reverse scrolling direction.
+				Use class "scr-text-stroke" to enable text stroke style (no effect on smaller screens!).
+			-->
+		<div class="tt-scrolling-text scr-text-stroke scr-text-reverse" data-scroll-speed="19">
+			<div class="tt-scrolling-text-inner" data-text="256M requests per day → 17.5M new transactions indexed →">
+				17.5M new transactions indexed →
+			</div> <!-- /.tt-scrolling-text-inner -->
+		</div>
+		<!-- End scrolling text -->
 
-</div> <!-- /.tt-section-inner -->
+	</div> <!-- /.tt-section-inner -->
 </div>
 <!-- End tt-section -->
+
+
+<!-- Magnetic Hover State Option -->
+<!-- <section class="py-12 my-40 sm:py-16 lg:py-20">
+	<div class="px-4 mx-auto max-w-6xl sm:px-6 lg:px-8">
+
+<div class="magnetic-item">
+
+
+		<a href="start.html" class="relative">
+
+			<div class="absolute -inset-2 text-center">
+				<div class="w-full h-full mx-auto opacity-30 text-center blur-lg filter gradient-button-bg"></div>
+			</div>
+
+			<div class="relative overflow-hidden text-center bg-gray-900 rounded-1xl lg:text-center start-button-cta">
+				<div class="p-6 lg:py-8 lg:px-14 text-center">
+					<div class=" text-center">
+						<h5 class="max-w-md mx-auto text-6xl font-bold   text-center">Start</h5>
+
+
+				</div>
+			</div>
+		</div>
+	</a>
+	</div>
+
+</div>
+</section> -->
+
+<!-- Pop-upn Bubble Hover State Option -->
+<section class="py-12 my-40 sm:py-16 lg:py-20">
+	<div class="px-4 mx-auto max-w-6xl sm:px-6 lg:px-8">
+
+
+			<div class="text-center anim-fadeinup relative">
+				<a href="start.html" class="tt-scrolling-btn-go all-works-btn" data-cursor="Learn<br>More">
+					<div class="scr-btn-inner ph-appear">
+
+
+
+			<div class="absolute -inset-2 text-center">
+				<div class="w-full h-full mx-auto opacity-30 text-center blur-lg filter" style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"></div>
+			</div>
+
+			<div class="relative overflow-hidden text-center bg-gray-900 rounded-1xl lg:text-center start-button-cta">
+				<div class="p-6 lg:py-8 lg:px-14 text-center">
+					<div class=" text-center">
+						<h5 class="max-w-md mx-auto text-6xl font-bold   text-center">Start</h5>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</a>
+</div>
+
+
+</div>
+</section>
+
+
+
+<!-- <section class="py-12 bg-gray-50 sm:py-16 lg:py-20">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto text-center xl:max-w-4xl">
+            <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">The only platform that creates unique & rare UI Kits with TailwindCSS</h2>
+        </div>
+
+        <div class="relative mt-12 lg:mt-20 lg:max-w-5xl lg:mx-auto">
+            <div class="absolute -inset-2">
+                <div class="w-full h-full mx-auto opacity-30 blur-lg filter" style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"></div>
+            </div>
+
+            <div class="relative grid grid-cols-1 px-16 py-12 overflow-hidden text-center bg-white sm:grid-cols-2 gap-y-12 lg:grid-cols-4 rounded-2xl gap-x-20">
+                <div class="flex flex-col items-center">
+                    <p class="text-5xl font-bold text-gray-900 lg:mt-3 lg:order-2 font-pj">110+</p>
+                    <h3 class="mt-5 text-sm font-bold tracking-widest text-gray-600 uppercase lg:mt-0 lg:order-1 font-pj">Blocks</h3>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <p class="text-5xl font-bold text-gray-900 lg:mt-3 lg:order-2 font-pj">29</p>
+                    <h3 class="mt-5 text-sm font-bold tracking-widest text-gray-600 uppercase lg:mt-0 lg:order-1 font-pj">Templates</h3>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <p class="text-5xl font-bold text-gray-900 lg:mt-3 lg:order-2 font-pj">3400+</p>
+                    <h3 class="mt-5 text-sm font-bold tracking-widest text-gray-600 uppercase lg:mt-0 lg:order-1 font-pj">Customers</h3>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <p class="text-5xl font-bold text-gray-900 lg:mt-3 lg:order-2 font-pj">2844</p>
+                    <h3 class="mt-5 text-sm font-bold tracking-widest text-gray-600 uppercase lg:mt-0 lg:order-1 font-pj">Support Tickets</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
 
 
 <!-- =======================
@@ -613,7 +735,7 @@
 ============================
 
 -->
-<div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
+<div class="tt-section padding-top-xlg-50 padding-bottom-xlg-150">
 	<div class="tt-section-inner tt-wrap">
 
 		<!-- Begin logo wall
@@ -695,7 +817,6 @@
 <!-- <div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150 hills">
 
 </div> -->
-
 
 
 <!-- ======================
