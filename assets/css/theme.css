@@ -6720,13 +6720,13 @@ body:not(.tt-magic-cursor) .social-buttons > ul > li a:hover {
 }
 
 .tt-accordion-item:not(.active) .tt-accordion-heading:hover .tt-accordion-caret {
-	color: #FFF;
+	color: #FFBB38;
 }
 .tt-accordion-item.active .tt-accordion-caret {
 	transform: rotate(90deg);
 }
 .tt-accordion-item.active .tt-accordion-heading:hover .tt-accordion-caret {
-	color: #FFF;
+	color: #FFBB38;
 }
 
 @media (max-width: 991px) {
@@ -9458,6 +9458,67 @@ body:not(.is-mobile) .tt-style-switch:hover {
 	/* color: #121212 !important; */
 }
 
-.gradient-button-bg {
+/* .gradient-button-bg {
 	background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%) !important;
+} */
+
+/* .apps-banner {
+padding: 16px 24px;
+display: flex;
+width: auto;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 0 8px rgba(0,0,0,0.2);
+border-radius: 1px;
+margin: 20px;
+vertical-align: middle;
+color: #fafafa;
 }
+
+.apps-banner:hover {
+background: #FE0230;
+}
+
+.apps-banner-success {
+border: 2px solid #FE0230;
+}
+
+.apps-banner-success i{
+cursor: pointer;
+}
+
+@media (max-width: 540px) {
+	.apps-banner {
+	padding: 8px 12px;
+	font-size: 12px;
+	display: flex;
+	width: auto;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	border-radius: 1px;
+	margin: 8px;
+	color: #fafafa;
+	}
+
+	.apps-banner-success {
+	border: 2px solid #FE0230;
+	}
+
+	.apps-banner-success i{
+	cursor: pointer;
+	}
+} */
+
+.apps-banner:hover {
+background: #FE0230;
+}
+
+.apps-banner-success i{
+cursor: pointer;
+}
+
+@media (max-width: 540px) {
+	.apps-banner {
+		font-size: 12px;
+	}
