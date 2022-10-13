@@ -246,7 +246,7 @@
 			var Scrollbar = window.Scrollbar;
 
 			// AnchorPlugin (URL with hash links load in the right position)
-			// https://github.com/idiotWu/smooth-scrollbar/issues/440
+		
 			// ==================================
 			class AnchorPlugin extends Scrollbar.ScrollbarPlugin {
 				static pluginName = 'anchor';
